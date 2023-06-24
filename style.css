@@ -3,20 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .imgCilios{
     width: 100%;
+    position: relative;
 }
 .imgCilios>img{
-    position: absolute;
     box-shadow: 0 0 5px #000;
     border-radius: 10px;
 }
 .img1{
     animation: imgs linear infinite 6s;
     transition: all 1s;
+    position: absolute;
+    left: 0;
+}
+.wrapperImgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 .logo{
     width: 300px;
@@ -27,12 +39,12 @@ body{
     height: 100px;
 }
 .quemSomos{
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: space-around;
     height: 110vh;
-    padding: 0 20%;
-    gap: 40%;
+    gap: 20%;
+    padding: 0 60px;
     background-image: url('https://www.jajalinfotech.com/wp-content/uploads/2019/06/58929.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +54,16 @@ body{
     background-color: #00000096;
     color: #fff;
     padding: 10px;
+    height: 300px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.quemSomos img{
+    box-shadow: 0 0 10px #000;
     border-radius: 10px;
 }
 header{
@@ -94,6 +116,9 @@ header a:hover::after{
     flex-direction: column;
     gap: 40px;
 }
+.titulo img{
+    width: 300px;
+}
 .fotos{
     display: flex;
     flex-direction: column;
@@ -101,8 +126,16 @@ header a:hover::after{
     background-image: url('https://th.bing.com/th/id/OIP.nl9nyJS_td08aCUKV3EHdwHaE8?pid=ImgDet&rs=1');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 130vh;
 }
+.imgUnhas{
+    position: relative;
+}
+.unhas{
+    position: absolute;
+    border-radius: 10px;
+}
+
 @keyframes imgs {
     0%{
         opacity: 1;
