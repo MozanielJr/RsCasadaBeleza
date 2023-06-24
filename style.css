@@ -4,45 +4,65 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #e3f3fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .imgCilios{
-    padding-top: 200px;
-    position: relative;
+    width: 100%;
 }
 .imgCilios>img{
     position: absolute;
-    top: 0;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
 }
 .img1{
     animation: imgs linear infinite 6s;
     transition: all 1s;
 }
+.logo{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+}
+.logo1{
+    height: 100px;
+}
 .quemSomos{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 120px;
+    height: 110vh;
+    padding: 0 20%;
+    gap: 40%;
+    background-image: url('https://www.jajalinfotech.com/wp-content/uploads/2019/06/58929.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #000;
+}
+.quemSomos p{
+    background-color: #00000096;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
 }
 header{
     display: flex;
     width: 100%;
     position: fixed;
-    height: 120px;
+    height: 15vh;
     justify-content: center;
     text-align: center;
     align-items: center;
     border-bottom: 2px solid #000;
+    z-index: 2;
+    background-color: #f5f2ea;
 }
 header a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header img{
-    position: absolute;
     left: 0;
     top: 0;
     height: 110px;
@@ -53,6 +73,7 @@ header img{
 header div{
     display: flex;
     gap: 60px;
+    align-items: center;
 }
 header a:after {
     content: '';
@@ -67,7 +88,21 @@ header a:hover::after{
     width: 100%;
 }
 
-
+.titulo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://th.bing.com/th/id/OIP.nl9nyJS_td08aCUKV3EHdwHaE8?pid=ImgDet&rs=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 @keyframes imgs {
     0%{
         opacity: 1;
