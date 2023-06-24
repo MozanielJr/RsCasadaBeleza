@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e3f3fb;
+}
+.imgCilios{
+    padding-top: 200px;
+    position: relative;
+}
+.imgCilios>img{
+    position: absolute;
+    top: 0;
+}
+.img1{
+    animation: imgs linear infinite 6s;
+    transition: all 1s;
+}
+.quemSomos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 120px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+header a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 110px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 5px #e100ff;
+}
+header div{
+    display: flex;
+    gap: 60px;
+}
+header a:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: rgb(0, 0, 0);
+    transition: 300ms;
+}
+
+header a:hover::after{
+    width: 100%;
+}
+
+
+@keyframes imgs {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
