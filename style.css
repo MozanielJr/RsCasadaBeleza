@@ -157,5 +157,8 @@ header a:hover::after{
     100%{
         opacity:1;
     }
-    
+
 }
+
+@media screen and (min-width: 900px) { article { padding: 1rem 3rem; } } 
+@supports (display: flex) { @media screen and (min-width: 900px) { article { display: flex; } } }
