@@ -143,6 +143,9 @@ header a:hover::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('https://www.jajalinfotech.com/wp-content/uploads/2019/06/58929.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @keyframes imgs {
     0%{
