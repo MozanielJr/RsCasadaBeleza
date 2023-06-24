@@ -135,7 +135,12 @@ header a:hover::after{
     position: absolute;
     border-radius: 10px;
 }
-
+.agendamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @keyframes imgs {
     0%{
         opacity: 1;
